@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "canisters": {
+    "backend": {
+      "type": "motoko",
+      "main": "backend/main.mo"
+    },
+    "frontend": {
+      "type": "assets",
+      "source": ["frontend/dist"]
+    },
+    "internet_identity": {
+      "type": "custom",
+      "wasm": "deps/wasm/rdmx6-jaaaa-aaaaa-aaadq-cai.wasm.gz",
+      "candid": "https://raw.githubusercontent.com/dfinity/internet-identity/main/src/internet_identity/internet_identity.did"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  }
+}
